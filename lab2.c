@@ -4,12 +4,17 @@ Wonc@purdue.edu
 Section 004
 Eric Matson
 */
-
 #include<stdio.h>
 #include<math.h>
 #define pi 3.14
 #define MAX 2640
 #define MIN 1000
+
+float calculateWatered(float r);
+float notWatered(float x, float y);
+float calculateWater(float x);
+float calculateTime(float r);
+
 float calculateWatered(float r) { //Function to calculate area watered
     float area = 0;
     area = pi * r * r;
