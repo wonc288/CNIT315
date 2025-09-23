@@ -7,9 +7,9 @@ Eric Matson
 #include<stdio.h>
 #include<string.h>
 
-int factorial(int n);
-void runHanoi(int n, char x, char y, char z);
-void reverse(char str[], int r);
+int factorial(int n); //Declaring function
+void runHanoi(int n, char x, char y, char z);//Declaring function
+void reverse(char str[], int r);//Declaring function
 
 void runHanoi(int n, char x, char y, char z) {
     if(n == 1) {
@@ -31,7 +31,7 @@ int factorial(int n) {
     }
 }
 
-void reverse(char str[], int l, int r) {
+void reverse(char str[], int l, int r) { //Recursivly working back through the string
     if(r = 0) {
         printf("%c\n", str[r];
     }
@@ -45,7 +45,7 @@ void reverse(char str[], int l, int r) {
 int main() {
     int choice = 0;
 
-    while(1) {
+    while(1) { //Define menu loop
         printf("=======================================\n");
         printf("MENU:\n");
         printf("=======================================\n");
@@ -53,9 +53,9 @@ int main() {
         printf("2. Towers of Hanoi\n");
         printf("3. Reverse\n");
         printf("4. Exit\n");
-        scanf(" %d", &choice);
+        scanf(" %d", &choice); //Choice input
 
-        if(choice == 4) {
+        if(choice == 4) { //exit program
             return 0;
         }
         else if(choice == 1) {
@@ -84,7 +84,7 @@ int main() {
             reverse(str, strlen(str));
             continue;
         }
-        else {
+        else { //Loop to get new input
             printf("Please entera number 1 - 4\n");
             continue;
         }
