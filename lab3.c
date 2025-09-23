@@ -9,7 +9,7 @@ Eric Matson
 
 int factorial(int n);
 void runHanoi(int n, char x, char y, char z);
-void reverse(char str[], int l, int r);
+void reverse(char str[], int r);
 
 void runHanoi(int n, char x, char y, char z) {
     if(n == 1) {
@@ -32,16 +32,14 @@ int factorial(int n) {
 }
 
 void reverse(char str[], int l, int r) {
-    if(l <= r) {
-        return;
+    if(r = 0) {
+        printf("%c\n", str[r];
     }
     else {
-        char temp;
-        str[l] = temp;
-        str[l] = str[r];
-        str[r] = temp;
-        reverse(str, l + 1, r - 1);
+        printf("%c", str[r]);
+        reverse(str, r-1);
     }
+    
 }
 
 int main() {
@@ -78,12 +76,12 @@ int main() {
             continue;
         }
         else if(choice == 3) {
-            char str[30] = "";
+            char str[100] = "";
             printf("Please enter a string to reverse: ");
-            scanf("%[^\n]", str);
+            scanf("\n%[^\n]", str);
             printf("String before: %s\n", str);
-            reverse(str, 0, strlen(str) - 1);
-            printf("String after : %s\n\n", str);
+            printf("String after: ");
+            reverse(str, strlen(str));
             continue;
         }
         else {
