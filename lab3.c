@@ -1,3 +1,9 @@
+/*
+Christian Won
+Wonc@purdue.edu
+Section 004
+Eric Matson
+*/
 #include<stdio.h>
 #include<string.h>
 
