@@ -5,10 +5,10 @@ Section 004
 Eric Matson
 */
 #include<stdio.h>
-#include<math.h>
+#include<math.h> 
 #define pi 3.14
-#define MAX 2640 //Define Max side
-#define MIN 1000 //Define min side
+#define MAX 2640 
+#define MIN 1000 
 
 float calculateWatered(float r);
 float notWatered(float x, float y);
@@ -69,6 +69,6 @@ int main() {
         count++;
     }
 
-    printf("Program has ended");
+    printf("Program has ended"); //End Program
     return count;
 }
