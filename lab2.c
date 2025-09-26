@@ -7,8 +7,8 @@ Eric Matson
 #include<stdio.h>
 #include<math.h>
 #define pi 3.14
-#define MAX 2640
-#define MIN 1000
+#define MAX 2640 //Define Max side
+#define MIN 1000 //Define min side
 
 float calculateWatered(float r);
 float notWatered(float x, float y);
